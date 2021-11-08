@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  zookeeper-standalone:
+    container_name: zookeeper-standalone
+    image: zookeeper:3.7
+    restart: unless-stopped
+    ports:
+      - '2181:2181'
