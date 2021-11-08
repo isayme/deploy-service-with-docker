@@ -1,0 +1,9 @@
+name: cluster-node1
+data-dir: /etcd-data
+initial-advertise-peer-urls: http://etcd-cluster-node1:2380
+listen-peer-urls: http://0.0.0.0:2380
+advertise-client-urls: http://etcd-cluster-node1:2379
+listen-client-urls: http://0.0.0.0:2379
+initial-cluster: cluster-node1=http://etcd-cluster-node1:2380,cluster-node2=http://etcd-cluster-node2:2380,cluster-node3=http://etcd-cluster-node3:2380
+initial-cluster-state: new
+initial-cluster-token: my-etcd-token

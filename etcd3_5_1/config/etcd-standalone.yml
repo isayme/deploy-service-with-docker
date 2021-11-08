@@ -1,0 +1,7 @@
+name: node-standalone
+data-dir: /etcd-data
+initial-advertise-peer-urls: http://etcd-standalone:2380
+listen-peer-urls: http://0.0.0.0:2380
+advertise-client-urls: http://etcd-standalone:2379
+listen-client-urls: http://0.0.0.0:2379
+initial-cluster: node-standalone=http://etcd-standalone:2380
